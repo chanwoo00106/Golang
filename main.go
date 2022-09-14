@@ -14,9 +14,13 @@ func main() {
 
   // Defer()
 
-  fmt.Println("hi")
-  패닉()
-  fmt.Println("hello")
+  // fmt.Println("hi")
+  // 패닉()
+  // fmt.Println("hello")
+
+  test := new(최형우)
+
+  fmt.Println(test)
 }
 
 func StandardIo() {
@@ -86,4 +90,10 @@ func 패닉() {
   defer recover()
   fmt.Println("전")
   panic("으악")
+}
+
+type 최형우 struct {
+  id string
+  안경 bool
+  age int
 }
