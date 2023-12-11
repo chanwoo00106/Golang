@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestListener(t *testing.T) {
+func TestListener(t *testing.T) error {
 	listener, err := net.Listen("tcp", "127.0.0.1:0")
 	if err != nil {
 		t.Fatal(err)
